@@ -1,10 +1,6 @@
-[![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
-[![Gratipay Team](https://img.shields.io/gratipay/team/prelude.svg?maxAge=2592000)](https://gratipay.com/prelude/)
-
-Emacs Prelude
+KayShen Emacs Pack
 =============
-
-[![Join the chat at https://gitter.im/bbatsov/prelude](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bbatsov/prelude?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+This Emacs configuration and custom plugins are based one Prelude
 
 Prelude is an Emacs distribution that aims to enhance the default
 Emacs experience.  Prelude alters a lot of the default settings,
@@ -17,93 +13,6 @@ Prelude is compatible **ONLY with GNU Emacs 24.4+**. In general you're
 advised to always run Prelude with the latest Emacs - currently
 **25.1**.
 
-You can support the development of Prelude via
-[Salt](https://bountysource.com/teams/prelude) and
-[Gratipay](https://www.gratipay.com/prelude).
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png)](https://gratipay.com/prelude)
-
-**Table of Contents**
-
-- [Fast Forward](#fast-forward)
-- [Installing Emacs](#installing-emacs)
-- [Installation](#installation)
-    - [Automated](#automated)
-        - [Via Curl](#via-curl)
-        - [Via Wget](#via-wget)
-    - [Manual](#manual)
-- [Updating Prelude](#updating-prelude)
-    - [Manual update](#manual-update)
-        - [Update all bundled packages](#update-all-bundled-packages)
-        - [Update Prelude's code](#update-preludes-code)
-        - [Restart Prelude](#restart-prelude)
-    - [Automatic update](#automatic-update)
-- [Enabling additional modules](#enabling-additional-modules)
-- [Running](#running)
-- [Getting to know Prelude](#getting-to-know-prelude)
-    - [Keymap](#keymap)
-        - [Global](#global)
-        - [Prelude Mode](#prelude-mode)
-        - [OSX modifier keys](#osx-modifier-keys)
-        - [Projectile](#projectile)
-        - [Helm](#helm)
-        - [Key-chords](#key-chords)
-            - [Disabling key-chords](#disabling-key-chords)
-- [Automatic package installation](#automatic-package-installation)
-    - [Color Themes](#color-themes)
-    - [Personalizing](#personalizing)
-        - [Disabling whitespace-mode](#disabling-whitespace-mode)
-        - [Disable flyspell-mode](#disable-flyspell-mode)
-- [Caveats & Pitfalls](#caveats--pitfalls)
-    - [Updating bundled packages](#updating-bundled-packages)
-    - [Problems with flyspell-mode](#problems-with-flyspell-mode)
-    - [Ugly colors in the terminal Emacs version](#ugly-colors-in-the-terminal-emacs-version)
-    - [MELPA error on initial startup](#melpa-error-on-initial-startup)
-    - [Warnings on arrow navigation in editor buffers](#warnings-on-arrow-navigation-in-editor-buffers)
-    - [Customized C-a behavior](#customized-c-a-behavior)
-    - [Poor ido matching performance on large datasets](#poor-ido-matching-performance-on-large-datasets)
-    - [Windows compatibility](#windows-compatibility)
-- [Known issues](#known-issues)
-- [Support](#support)
-- [Contributors](#contributors)
-- [Bugs & Improvements](#bugs--improvements)
-
-## Fast Forward
-
-Assuming you're using an Unix-like OS (`*BSD`, `GNU/Linux`, `OS X`, `Solaris`,
-etc), you already have Emacs 24.4+ installed, as well as `git` & `curl` you
-can skip the whole manual and just type in your favorite shell the
-following command:
-
-```bash
-curl -L https://git.io/epre | sh
-```
-
-You can now power up your Emacs, sit back and enjoy Prelude,
-forgetting about the rest of this manual.
-
-There are two environment variables you can use to control the
-source repository and the installation directory. To change the
-installation directory:
-
-```bash
-export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh | sh
-```
-
-To change the source repository:
-
-```bash
-export PRELUDE_URL="https://github.com/yourname/prelude.git" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
-```
-
-Note that the installer will back up any existing `.emacs` file or
-`.emacs.d` since it will unpack Prelude's code in `.emacs.d`. If
-you're doing a manual install make sure you don't have a `.emacs` file
-or back up your existing `.emacs.d` directory manually.
-
-Don't forget to adjust your `prelude-modules.el` file once the installation is done.
-By default most of the modules that ship with Prelude are not loaded.
-
 ## Installing Emacs
 
 Obviously to use the Emacs Prelude you have to install Emacs
@@ -113,32 +22,10 @@ the
 
 ## Installation
 
-### Automated
-
-You can install **Emacs Prelude** via the command line with either `curl` or
-`wget`. Naturally `git` is also required.
-
-#### Via Curl
-
-If you're using `curl` type the following command:
-
-```bash
-curl -L https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh | sh
-```
-
-#### Via Wget
-
-If you're using `wget` type:
-
-```bash
-wget --no-check-certificate https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh -O - | sh
-```
-
 ### Manual
 
 ```bash
-git clone git://github.com/KayShen/emacs-ks-pack.git path/to/local/repo
-ln -s path/to/local/repo ~/.emacs.d
+git clone git://github.com/KayShen/emacs-ks-pack.git ~/.emacs.d
 cd ~/.emacs.d
 ```
 
