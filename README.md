@@ -31,36 +31,6 @@ cd ~/.emacs.d
 
 If you are using Windows, you should check what Emacs thinks the `~` directory is by running Emacs and typing `C-x d ~/<RET>`, and then adjust the command appropriately.
 
-## Updating Prelude
-
-### Manual update
-
-The update procedure is fairly straightforward and consists of 3 steps:
-
-#### Update all bundled packages
-
-Just run <kbd>M-x package-list-packages RET U x</kbd>.
-
-#### Update Prelude's code
-
-```bash
-cd path/to/prelude/installation
-git pull
-```
-
-The `path/to/prelude/installation` is usually `~/.emacs.d` (at least
-on Unix systems).
-
-#### Restart Prelude
-
-It's generally a good idea to stop Emacs after you do the update. The
-next time Prelude starts it will install any new dependencies (if
-there are such).
-
-### Automatic update
-
-Simply run <kbd>M-x prelude-update</kbd> from Emacs itself and restart Emacs afterwards.
-
 ## Enabling additional modules
 
 By default most of the modules that ship with Prelude are not loaded. For more information on the functionality provided by these modules visit the [docs](modules/doc/README.md).
@@ -139,16 +109,6 @@ emacsclient somefile:1234
 ```
 
 This will open file 'somefile' and set cursor on line 1234.
-
-## Getting to know Prelude
-
-Certainly the best way to understand how Prelude enhances the default
-Emacs experience is to peruse Prelude's source code (which is
-obviously written in Emacs Lisp). Understanding the code is not
-necessary of course. Prelude includes a `prelude-mode` minor Emacs mode
-which collects some of the additional functionality added by
-Prelude. It also adds an additional keymap that binds many of those
-extensions to keybindings.
 
 ### Keymap
 
