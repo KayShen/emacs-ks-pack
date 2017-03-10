@@ -20,6 +20,8 @@ first. Have a look at
 the
 [WikEmacs articles on installing Emacs](http://wikemacs.org/index.php/Installing_Emacs).
 
+Specifically for Mac, you can download [here](https://emacsformacosx.com/emacs-builds/Emacs-24.5-universal.dmg)
+
 ## Installation
 
 ### Manual
