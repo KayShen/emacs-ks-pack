@@ -123,7 +123,7 @@ You can install **Emacs Prelude** via the command line with either `curl` or
 If you're using `curl` type the following command:
 
 ```bash
-curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+curl -L https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh | sh
 ```
 
 #### Via Wget
@@ -131,13 +131,13 @@ curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 If you're using `wget` type:
 
 ```bash
-wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+wget --no-check-certificate https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh -O - | sh
 ```
 
 ### Manual
 
 ```bash
-git clone git://github.com/bbatsov/prelude.git path/to/local/repo
+git clone git://github.com/KayShen/emacs-ks-pack.git path/to/local/repo
 ln -s path/to/local/repo ~/.emacs.d
 cd ~/.emacs.d
 ```
