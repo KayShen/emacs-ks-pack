@@ -520,31 +520,3 @@ You can always disable the improved sorting algorithm all together like this:
 While everything in Prelude should work fine in Windows, I test it only
 with Linux & OS X, so there are Windows related problems from time to
 time. This situation will probably improve over time.
-
-## Known issues
-
-Check out the project's
-[issue list](https://github.com/bbatsov/prelude/issues?sort=created&direction=desc&state=open)
-a list of unresolved issues. By the way - feel free to fix any of them
-and send me a pull request. :-)
-
-## Support
-
-Support is available via the Prelude Google Group <emacs-prelude@googlegroups.com>.
-
-There's also a Freenode channel you can visit - `#prelude-emacs`.
-
-## Contributors
-
-Here's a [list](https://github.com/bbatsov/prelude/contributors) of all the people who have contributed to the
-development of Emacs Prelude.
-
-## Bugs & Improvements
-
-Bug reports and suggestions for improvements are always
-welcome. GitHub pull requests are even better! :-)
-
-Cheers,<br/>
-[Bozhidar](https://twitter.com/bbatsov)
-
-[badge-license]: https://img.shields.io/badge/license-GPL_3-green.svg
