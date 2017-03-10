@@ -87,7 +87,7 @@ source repository and the installation directory. To change the
 installation directory:
 
 ```bash
-export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/KayShen/emacs-ks-pack/raw/master/utils/installer.sh | sh
 ```
 
 To change the source repository:
