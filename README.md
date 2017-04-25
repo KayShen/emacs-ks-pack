@@ -517,3 +517,8 @@ You can always disable the improved sorting algorithm all together like this:
 (flx-ido-mode -1)
 ```
 
+### Windows compatibility
+ 
+ While everything in Prelude should work fine in Windows, I test it only
+ with Linux & OS X, so there are Windows related problems from time to
+ time. This situation will probably improve over time.
